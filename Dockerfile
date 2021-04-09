@@ -10,5 +10,5 @@ RUN apk update && \
     make && \
     chmod a+x minimap2 && \
     mv minimap2 /usr/local/bin/minimap2 && \
-    cd .. \
+    cd .. && \
     rm -rf minimap2-2.17
