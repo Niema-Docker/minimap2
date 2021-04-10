@@ -4,7 +4,7 @@ MAINTAINER Niema Moshiri <niemamoshiri@gmail.com>
 
 # install Minimap2
 RUN apk update && \
-    apk add gcc make musl-dev zlib-dev && \
+    apk add bash gcc make musl-dev zlib-dev && \
     wget -qO- "https://github.com/lh3/minimap2/archive/refs/tags/v2.17.tar.gz" | tar -zx && \
     cd minimap2-2.17 && \
     make && \
