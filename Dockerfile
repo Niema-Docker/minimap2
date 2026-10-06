@@ -1,6 +1,5 @@
 # Minimal Docker image for Minimap2 using Alpine base
 FROM alpine:3.13.5
-MAINTAINER Niema Moshiri <niemamoshiri@gmail.com>
 
 # install Minimap2
 RUN apk update && \
