@@ -1,5 +1,5 @@
 # Minimal Docker image for Minimap2 using Alpine base
-FROM alpine:3.13.5
+FROM alpine:latest
 
 # install Minimap2
 RUN apk update && \
