@@ -3,7 +3,7 @@ FROM alpine:latest
 
 # install Minimap2
 RUN apk update && \
-    apk add bash gcc make musl-dev zlib-dev && \
+    apk add --no-cache bash gcc make musl-dev zlib-dev && \
     wget -qO- "https://github.com/lh3/minimap2/archive/refs/tags/v2.31.tar.gz" | tar -zx && \
     cd minimap2-* && \
     make && \
