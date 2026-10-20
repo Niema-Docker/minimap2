@@ -8,6 +8,6 @@ RUN apk update && \
     cd minimap2-* && \
     make && \
     chmod a+x minimap2 && \
-    mv minimap2 /usr/local/bin/minimap2 && \
+    mv minimap2 /usr/local/bin/ && \
     cd .. && \
     rm -rf minimap2-*
