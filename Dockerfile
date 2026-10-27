@@ -7,7 +7,6 @@ RUN apk update && \
     wget -qO- "https://github.com/lh3/minimap2/archive/refs/tags/v2.31.tar.gz" | tar -zx && \
     cd minimap2-* && \
     make && \
-    chmod a+x minimap2 && \
     mv minimap2 /usr/local/bin/ && \
     cd .. && \
     rm -rf minimap2-*
